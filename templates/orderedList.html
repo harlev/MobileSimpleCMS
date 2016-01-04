@@ -1,0 +1,6 @@
+<ol type="1" >
+  <li ng-repeat="item in section.content track by $index">
+    <b>{{$index+1}}.</b>
+    <span ng-bind-html="item | highlight:highlight"></span>
+  </li>
+</ol>

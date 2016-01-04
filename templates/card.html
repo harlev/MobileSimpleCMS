@@ -1,0 +1,30 @@
+<div class="list card">
+  <div class="item item-divider">{{section.title}}</div>
+  <div class="item item-body">
+    <div ng-repeat="section in section.content.sections track by $index">
+      <div ng-if="section.type == 'paragraph'">
+        <frc-paragraph section="section" highlight="highlight"></frc-paragraph>
+      </div>
+
+      <div ng-if="section.type == 'html'">
+        <frc-paragraph section="section" highlight="highlight"></frc-paragraph>
+      </div>
+
+      <div ng-if="section.type == 'bullet list'">
+        <frc-bullets section="section" highlight="highlight"></frc-bullets>
+      </div>
+
+      <div ng-if="section.type == 'ordered list'">
+        <frc-numbers section="section" highlight="highlight"></frc-numbers>
+      </div>
+
+      <div ng-if="section.type == 'list'">
+        <frc-list section="section" highlight="highlight"></frc-list>
+      </div>
+
+      <div ng-if="section.type == 'image'">
+        <frc-image section="section"></frc-image>
+      </div>
+    </div>
+  </div>
+</div>

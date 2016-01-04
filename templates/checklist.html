@@ -1,0 +1,44 @@
+<p>
+<ion-list ng-init="initChecklist()">
+  <ion-toggle ng-model="editMode" toggle-class="toggle-calm">Edit Mode</ion-toggle>
+  <div ng-repeat="part in section.content track by $index">
+  <div ng-if="editMode">
+    <div><b>{{part.title}}</b></div>
+    <ion-item ng-repeat="item in part.items track by $index">
+      <b><div ng-bind-html="item.question"></div></b>
+
+      <ion-radio ng-repeat="itemOption in getRadios(section) track by $index" name="{{item.question}}" ng-model="question.choice[item.question]"
+                 ng-value="'{{itemOption.title}}'"
+                 ng-change="radioChange(item.question)"
+                 ng-init="initRadio(item.question)">
+        {{itemOption.title}}
+      </ion-radio>
+
+      <label class="item item-input" ng-repeat="textInput in getTextInputs(section) track by $index">
+        <input type="text" placeholder="{{textInput.title}}" ng-model="question.text[item.question]"
+               ng-change="questionTextChange(item.question)"
+               ng-init="initQuestionText(item.question)">
+      </label>
+    </ion-item>
+  </div>
+
+  <div ng-if="!editMode">
+    <div><b>{{part.title}}</b></div>
+    <div class="row header">
+      <div class="col">Question</div>
+      <div class="col">Yes</div>
+      <div class="col">No</div>
+      <div class="col">NA</div>
+      <div class="col">Location/Notes</div>
+    </div>
+    <div class="row" ng-repeat="item in part.items track by $index" ng-init="initRadio(item.question);initQuestionText(item.question)">
+      <div class="col">{{item.question}}</div>
+      <div class="col"><div ng-if="question.choice[item.question] == 'Yes'" class="ion-checkmark-round balanced"></div></div>
+      <div class="col"><div ng-if="question.choice[item.question] == 'No'" class="ion-checkmark-round assertive"></div></div>
+      <div class="col"><div ng-if="question.choice[item.question] == 'NA'" class="ion-checkmark-round"></div></div>
+      <div class="col">{{question.text[item.question]}}</div>
+    </div>
+  </div>
+  </div>
+</ion-list>
+</p>

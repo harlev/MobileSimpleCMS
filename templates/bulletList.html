@@ -1,0 +1,13 @@
+<ul style="list-style-type: disc; padding-left: 20px">
+  <li ng-repeat="item in section.content track by $index">
+    <div ng-if="item.level1 == undefined" ng-bind-html="item | highlight:highlight">
+    </div>
+    <div ng-if="item.level1 != undefined">
+      <div ng-bind-html="item.level1 | highlight:highlight"></div>
+      <ul style="list-style-type: disc; padding-left: 30px">
+        <li ng-repeat="level2item in item.level2 track by $index" ng-bind-html="level2item | highlight:highlight">
+        </li>
+      </ul>
+    </div>
+  </li>
+</ul>

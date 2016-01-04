@@ -1,0 +1,172 @@
+{
+  "pages": [
+    {
+      "title": "SAMPLE CHECKLIST",
+      "content": {
+        "sections": [
+          {
+            "type": "paragraph",
+            "content": "Bacon ipsum dolor sit amet tenderloin salami pig, fatback pastrami ham hock shoulder bacon t-bone pork meatball. Pancetta ham turkey shankle turducken jerky. Jowl spare ribs short ribs andouille tongue shoulder. Rump shoulder cow turducken, salami filet mignon ham sausage pancetta pork prosciutto brisket short ribs boudin. Shoulder short ribs andouille swine venison ham hock."
+          },
+          {
+            "type": "checklist",
+            "itemOptions": [
+              {
+                "type": "radio",
+                "title": "Yes"
+              },
+              {
+                "type": "radio",
+                "title": "No"
+              },
+              {
+                "type": "radio",
+                "title": "NA"
+              },
+              {
+                "type": "text",
+                "title": "Notes"
+              }
+            ],
+            "content": [
+              {
+                "title": "SAMPLE SECTION 1",
+                "items": [
+                  {
+                    "question": "question 1"
+                  },
+                  {
+                    "question": "question 2"
+                  },
+                  {
+                    "question": "question 3"
+                  }
+                ]
+              },
+              {
+                "title": "SAMPLE SECTION 1",
+                "items": [
+                  {
+                    "question": "question A"
+                  },
+                  {
+                    "question": "question B"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "title": "SAMPLE CONTENT",
+      "content": {
+        "sections": [
+          {
+            "type": "paragraph",
+            "title": "SAMPLE HEADLINE",
+            "content": "Bacon ipsum dolor sit amet tenderloin salami pig, fatback pastrami ham hock shoulder bacon t-bone pork meatball. Pancetta ham turkey shankle turducken jerky. Jowl spare ribs short ribs andouille tongue shoulder. Rump shoulder cow turducken, salami filet mignon ham sausage pancetta pork prosciutto brisket short ribs boudin. Shoulder short ribs andouille swine venison ham hock."
+          },
+          {
+            "type": "card",
+            "title": "CARD 1",
+            "content": {
+              "sections": [
+                {
+                  "type": "paragraph",
+                  "content": "Bacon ipsum dolor sit amet tenderloin salami pig, fatback pastrami ham hock shoulder bacon t-bone pork meatball. Pancetta ham turkey shankle turducken jerky. Jowl spare ribs short ribs andouille tongue shoulder. Rump shoulder cow turducken, salami filet mignon ham sausage pancetta pork prosciutto brisket short ribs boudin. Shoulder short ribs andouille swine venison ham hock."
+                }
+              ]
+            }
+          },
+          {
+            "type": "card",
+            "title": "CARD 2",
+            "content": {
+              "sections": [
+                {
+                  "type": "html",
+                  "content": "Bacon ipsum dolor sit amet tenderloin salami pig, fatback pastrami ham hock shoulder bacon t-bone pork meatball. Pancetta ham turkey shankle turducken jerky. Jowl spare ribs short ribs andouille tongue shoulder. Rump shoulder cow turducken, salami filet mignon ham sausage pancetta pork prosciutto brisket short ribs boudin. Shoulder short ribs andouille swine venison ham hock.."
+                }
+              ]
+            }
+          },
+          {
+            "type": "bullet list",
+            "content": [
+              "Bacon ipsum dolor sit amet tenderloin salami pig, fatback pastrami ham hock shoulder bacon t-bone pork meatball.",
+              "Bacon ipsum dolor sit amet tenderloin salami pig, fatback pastrami ham hock shoulder bacon t-bone pork meatball.",
+              "Bacon ipsum dolor sit amet tenderloin salami pig, fatback pastrami ham hock shoulder bacon t-bone pork meatball.",
+              "Bacon ipsum dolor sit amet tenderloin salami pig, fatback pastrami ham hock shoulder bacon t-bone pork meatball."
+            ]
+          },
+          {
+            "type": "list",
+            "content": [
+              {
+                "text": "Subpage 1",
+                "link": "Subpage 1"
+              },
+              {
+                "text": "Subpage 2",
+                "link": "Subpage 2"
+              }
+            ]
+          },
+          {
+            "type": "ordered list",
+            "content": [
+              "item A",
+              "Item B"
+            ]
+          },
+          {
+            "type": "image",
+            "name": "sample.jpg"
+          },
+          {
+            "type": "bullet list",
+            "content": [
+              "Item 1",
+              {
+                "level1": "Item 2",
+                "level2": [
+                  "Item 2.1",
+                  "Item 2.2",
+                  "Item 2.3"
+                ]
+              },
+              "Item 3",
+              "Item 4"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "title": "Subpage 1",
+      "showInToc": false,
+      "content": {
+        "sections": [
+          {
+            "type": "paragraph",
+            "content": "Bacon ipsum dolor sit amet tenderloin salami pig, fatback pastrami ham hock shoulder bacon t-bone pork meatball. Pancetta ham turkey shankle turducken jerky. Jowl spare ribs short ribs andouille tongue shoulder. Rump shoulder cow turducken, salami filet mignon ham sausage pancetta pork prosciutto brisket short ribs boudin. Shoulder short ribs andouille swine venison ham hock."
+          }
+        ]
+      }
+    },
+    {
+      "title": "Subpage 2",
+      "showInToc": false,
+      "content": {
+        "sections": [
+          {
+            "type": "paragraph",
+            "content": "Bacon ipsum dolor sit amet tenderloin salami pig, fatback pastrami ham hock shoulder bacon t-bone pork meatball. Pancetta ham turkey shankle turducken jerky. Jowl spare ribs short ribs andouille tongue shoulder. Rump shoulder cow turducken, salami filet mignon ham sausage pancetta pork prosciutto brisket short ribs boudin. Shoulder short ribs andouille swine venison ham hock."
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+<ion-view title="{{page.title}}">
+  <ion-nav-buttons side="secondary">
+    <button class="button icon ion-ios-home" ng-click="goHome()">
+    </button>
+  </ion-nav-buttons>
+
+  <ion-content overflow-scroll="true" padding="'true'" class="has-header">
+    <div ng-repeat="section in page.content.sections track by $index">
+      <div ng-if="section.type == 'paragraph'">
+        <frc-paragraph section="section" highlight="searchText"></frc-paragraph>
+      </div>
+
+      <div ng-if="section.type == 'html'">
+        <frc-paragraph section="section" highlight="searchText"></frc-paragraph>
+      </div>
+
+      <div ng-if="section.type == 'bullet list'">
+        <frc-bullets section="section" highlight="searchText"></frc-bullets>
+      </div>
+
+      <div ng-if="section.type == 'ordered list'">
+        <frc-numbers section="section" highlight="searchText"></frc-numbers>
+      </div>
+
+      <div ng-if="section.type == 'list'">
+        <frc-list section="section" highlight="searchText"></frc-list>
+      </div>
+
+      <div ng-if="section.type == 'card'">
+        <frc-card section="section" highlight="searchText"></frc-card>
+      </div>
+
+      <div ng-if="section.type == 'image'">
+        <frc-image section="section"></frc-image>
+      </div>
+
+      <div ng-if="section.type == 'checklist'">
+        <frc-checklist section="section"></frc-checklist>
+      </div>
+    </div>
+  </ion-content>
+
+  <ion-footer-bar align-title="center" class="bar-balanced">
+    <div class="buttons">
+
+    </div>
+    <h1 class="title"></h1>
+    <div class="buttons">
+      <a href="/#/search">
+        <button class="button">
+          <i class="icon ion-ios-search"></i>
+          Search
+        </button>
+      </a>
+    </div>
+  </ion-footer-bar>
+
+</ion-view>

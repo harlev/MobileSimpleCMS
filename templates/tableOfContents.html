@@ -1,0 +1,22 @@
+<ion-view title="Table of Contents" ng-init="init()">
+    <ion-content overflow-scroll="true" padding="'true'" class="has-header">
+        <ion-list>
+            <ion-item ng-repeat="page in tocPages() track by $index" ng-href="#/page/{{page.title | escape}}">{{page.title}}</ion-item>
+        </ion-list>
+    </ion-content>
+
+    <ion-footer-bar align-title="center" class="bar-balanced">
+        <div class="buttons">
+
+        </div>
+        <h1 class="title"></h1>
+        <div class="buttons">
+            <a href="/#/search">
+                <button class="button">
+                    <i class="icon ion-ios-search"></i>
+                    Search
+                </button>
+            </a>
+        </div>
+    </ion-footer-bar>
+</ion-view>
